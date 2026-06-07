@@ -964,6 +964,64 @@ img { max-width: 100%; height: auto; }
   .pgrid{grid-template-columns:1fr !important}
   .sgrid{grid-template-columns:1fr !important}
 }
+
+@media(max-width:768px){
+  .timer{padding:9px 12px;gap:8px;flex-wrap:nowrap;overflow:hidden}
+  .timer-l{min-width:0;flex:1;overflow:hidden}
+  .timer-l .tey{font-size:6px;letter-spacing:.12em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .timer-l .tstock{font-size:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tunits{flex-shrink:0}
+  .tunit{width:28px;padding:4px 2px}
+  .tnum{font-size:15px}
+  .tsub{font-size:5px}
+  .tsep{font-size:11px;margin-bottom:5px}
+  .timer .btn-gd{padding:8px 10px;font-size:7px;flex-shrink:0;white-space:nowrap}
+}
+@media(max-width:420px){
+  .timer-l .tey{display:none}
+  .tstock{font-size:7px}
+}
+
+
+@media screen and (max-width:768px){
+  .timer{
+    padding:9px 12px !important;
+    gap:6px !important;
+    flex-wrap:nowrap !important;
+    overflow:hidden !important;
+  }
+  .timer-l{
+    flex:1 !important;
+    min-width:0 !important;
+    overflow:hidden !important;
+  }
+  .tey{
+    font-size:7px !important;
+    letter-spacing:.1em !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+  .tstock{
+    font-size:7px !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+  .tunits{flex-shrink:0 !important}
+  .tunit{width:30px !important;padding:5px 3px !important}
+  .tnum{font-size:16px !important}
+  .tsub{font-size:5px !important}
+  .tsep{font-size:12px !important;margin-bottom:5px !important}
+  .timer .btn-gd{
+    padding:8px 10px !important;
+    font-size:7px !important;
+    letter-spacing:.12em !important;
+    flex-shrink:0 !important;
+    white-space:nowrap !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1104,8 +1162,8 @@ img { max-width: 100%; height: auto; }
     </div>
     <div class="timer">
       <div class="timer-l">
-        <div class="tey">Limited Drop &mdash; Phantom</div>
-        <div class="tstock">Only <b>S, M &amp; L</b> remaining in Black</div>
+        <div class="tey">Phantom &mdash; SS26</div>
+        <div class="tstock">Only <b>S, M &amp; L</b> left</div>
       </div>
       <div class="tunits">
         <div class="tunit"><div class="tnum" id="dh">07</div><div class="tsub">hrs</div></div>

@@ -568,12 +568,7 @@ img { max-width: 100%; height: auto; }
   .trdc { font-size: 9px; }
 
   /* ── PDP ── */
-  .pdp {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100%;
-    overflow: hidden;
-  }
+  
   
   
   
@@ -812,11 +807,44 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 768px) {
-  .pdp-imgs { position: relative !important; top: auto !important; }
+  
   .pdp-main { height: 320px; }
   .pdp-img  { padding: 24px 28px; }
   .pdp-thumb { height: 72px; padding: 8px 12px; }
 }
+
+@media(max-width:768px){
+  
+  
+  .pdp-info{width:100% !important;padding:20px 16px !important}
+  .pdp-main{height:320px !important}
+  .pdp img{max-width:100% !important}
+}
+
+
+@media screen and (max-width:768px){
+  div.pdp{
+    display:block !important;
+    grid-template-columns:unset !important;
+    width:100% !important;
+    min-height:0 !important;
+  }
+  div.pdp > div.pdp-imgs{
+    display:block !important;
+    position:static !important;
+    top:auto !important;
+    width:100% !important;
+    border-right:none !important;
+  }
+  div.pdp > div.pdp-info{
+    display:flex !important;
+    width:100% !important;
+    padding:20px 16px !important;
+    box-sizing:border-box !important;
+  }
+  .pdp-main{height:320px !important}
+}
+
 </style>
 </head>
 <body>
